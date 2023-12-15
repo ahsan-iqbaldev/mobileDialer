@@ -1,0 +1,216 @@
+.header{
+    height: 50px;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    padding: 0 20px;
+}
+.leftHeader{
+width: 50%;
+height: auto;
+margin-top: 8px;
+display: flex;
+}
+.leftHeader h3{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.headerleftlogo{
+    margin-top: 2px;
+}
+.rightHeader{
+width: 50%;
+height: auto;
+margin-top: 8px;
+display: flex;
+justify-content: end;
+gap: 6px;
+}
+.number{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+.number h2{
+    font-size: 25px;
+    font-weight: 400;      
+}
+.addNumber{
+    height: 20px ;
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    color: #2d63b4;
+}
+.keypad{
+    height: auto;
+    width: 100%;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+.keypadSection1,
+.keypadSection2,
+.keypadSection3,
+.keypadSection4
+{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.bubble{
+    height: 60px;
+    width: 60px;
+    background-color: #333333;
+     text-align: center;
+     border-radius: 50%;
+
+}
+
+.bubble button{
+    line-height: 5px;
+    font-size: 28px;
+    font-weight: 500;
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background-color: #333333;
+     text-align: center;
+     border-radius: 50%;
+     cursor: pointer;
+     
+
+}
+
+.bubble1{
+    height: 60px;
+    width: 60px;
+    background-color: #333333;
+     text-align: center;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+
+}
+
+.bubble1 h4{
+    line-height: 5px;
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+.bubble1 h2{
+    line-height: 5px;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.span{
+    font-size: 10px !important;
+    height: 10px !important;
+    margin-top: 8px;
+}
+.span1{
+    font-size: 20px !important;
+    height: 5px !important;
+    margin-top: 8px;
+} 
+
+.callButton{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    padding-left: 41%;
+    margin-top: 25px;
+    /* justify-content: space-around; */
+}
+.callButton .buttoncall{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #65d15a;
+    cursor: pointer;
+}
+.callButtonIcon{
+    font-size: 25px;
+    color: #fff;
+}
+.remove_button{
+    height: auto;
+    width: 50%;
+    margin-left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.closeBtn{
+    cursor: pointer;
+    font-size: 28px;
+}
+.footer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+ margin-top: 80px;
+}
+.footer .footer1{
+    height: 50px;
+    width: 25%;
+    text-align: center;
+}
+.star{
+    color: #7d7d7d;
+   font-size: 20px;
+   cursor: pointer;
+   text-decoration: none;
+}
+.footer1 h6{
+    color: #7d7d7d;
+}
+@media (max-width: 480px) {
+    .remove_button {
+        height: auto;
+        width: 50%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .callButton {
+        height: auto;
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        padding-left: 42%;
+        margin-top: 25px;
+    }
+
+    .keypad {
+        height: auto;
+        width: 100%;
+        padding: 0 30px;
+        margin-top: 100px;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        height: auto;
+    }
+}
