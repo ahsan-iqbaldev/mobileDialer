@@ -1,50 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap");
 
-*{
-margin: 0;padding: 0;box-sizing: border-box;
-font-family: 'Baloo Bhai 2', sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhai 2", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: #fff;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 .container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .screen {
-    height: 100vh;
-    background-color: #000;
-    color: #fff;
-    width: 350px;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  width: 350px;
 }
 
 .screen2 {
-    height: 100vh;
-    background-color: #636468;
-    color: #fff;
-    width: 350px;
-    padding: 25px 0;
+  height: 100vh;
+  background-color: #636468;
+  color: #fff;
+  width: 350px;
+  padding: 25px 0;
+}
+.footer_cover {
+  height: 100px;
+  width: 100%;
 }
 @media (max-width: 480px) {
-    .screen {
-        height: 100%;
-        background-color: #000;
-        color: #fff;
-        width: 100%;
-    }
-    
-    .screen2 {
-        height: 100%;
-        background-color: #636468;
-        color: #fff;
-        width: 100%;
-        padding: 25px 0;
-    }
+  .screen {
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+  }
+
+  .screen2 {
+    height: 100%;
+    background-color: #636468;
+    color: #fff;
+    width: 100%;
+    padding: 25px 0;
+  }
 }

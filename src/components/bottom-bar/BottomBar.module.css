@@ -1,0 +1,32 @@
+.footer1 {
+  height: 50px;
+  width: 25%;
+  text-align: center;
+}
+.star {
+  color: #7d7d7d;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer1 h6 {
+  color: #7d7d7d;
+}
+.footer {
+  /* height: 80px; */
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 90%;
+  /* margin-top: 80px; */
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+  }
+}

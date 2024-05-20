@@ -1,147 +1,145 @@
-.header{
-    height: 50px;
-    width: 100%;
-    /* border: 1px solid white; */
-    display: flex;
-    padding: 0 30px;
+.header {
+  height: 50px;
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  padding: 0 30px;
 }
-.leftHeader{
-width: 50%;
-height: auto;
-margin-top: 8px;
-display: flex;
+.leftHeader {
+  width: 50%;
+  height: auto;
+  margin-top: 8px;
+  display: flex;
 }
-.leftHeader h3{
-    font-size: 14px;
-    margin-right: 5px;
+.leftHeader h3 {
+  font-size: 14px;
+  margin-right: 5px;
 }
-.headerleftlogo{
-    margin-top: 2px;
+.headerleftlogo {
+  margin-top: 2px;
 }
-.rightHeader{
-width: 50%;
-height: auto;
-margin-top: 8px;
-display: flex;
-justify-content: end;
-gap: 6px;
+.rightHeader {
+  width: 50%;
+  height: auto;
+  margin-top: 8px;
+  display: flex;
+  justify-content: end;
+  gap: 6px;
 }
-.menu{
-    height: 70px;
-    width: 100%;
-    display: flex;
-    padding: 0 15px;
-}
-.editBtn{
-    height: auto;
-    width: 25%;
-    color: #3869dbc3;
-    font-size: 15px;
-    font-weight: 500;
-}
-.toogle{
-    height: auto;
-    width: 75%;
-    display: flex;
-}
-.toogleLeft{
-    height: 25px;
-    width: 70px;
-    background-color: #1c1c1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-    font-size: 14px;
-}
-.toogleRight{
-    background-color: #5b5a5f;
-    height: 25px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-    margin-left: -10px;
-    font-size: 14px;
-}
-
-.heading{
-    height: auto;
-    width: 100%;
-    padding: 0 30px;
-    margin-top: -40px;
-}
-.heading h2{
-    font-size: 35px;
-}
-.historyList{
-    height: 490px;
-    width: 100%;
-    padding: 0 30px;
-}
-.list{
-    height: 40px;
-    width: 100%;
-    display: flex;
-    border-bottom: 1px solid #2d2b2b;
-}
-.callName{
-    height: auto;
-    width: 50%;
-    font-size: 11px;
-    font-weight: 500;
-    color: #747272;
-}
-.span{
-    color: #e54651;
-    font-size: 13px;
-}
-.bin{
-    height: auto;
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 5px;
-}
-.bin h5{
-    font-size: 12px;
-    color: #747272;
-    font-weight: 500;
-}
-.binIcon{
-    font-size: 25px;
-    color: #e54651;
-    margin-top: 5px;
-    cursor: pointer;
-}
-.footer{
-    height: 80px;
-    width: 100%;
-    display: flex;
-}
-.footer .footer1{
-    height: 50px;
-    width: 25%;
-    text-align: center;
-   
-}
-.star{
-    color: #7d7d7d;
-   font-size: 20px;
-   cursor: pointer;
-
-}
-.footer1 h6{
-    color: #7d7d7d;
-}
-@media (max-width: 480px) {
-.footer{
+.menu {
+  height: 70px;
   width: 100%;
   display: flex;
-  position: absolute;
-  bottom: 0;
-  height: auto;
+  padding: 0 15px;
 }
+.editBtn {
+  height: auto;
+  width: 25%;
+  color: #3869dbc3;
+  font-size: 15px;
+  font-weight: 500;
+}
+.toogle {
+  height: auto;
+  width: 75%;
+  display: flex;
+}
+.toogleLeft {
+  height: 25px;
+  width: 70px;
+  background-color: #1c1c1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  font-size: 14px;
+}
+.toogleRight {
+  background-color: #5b5a5f;
+  height: 25px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin-left: -10px;
+  font-size: 14px;
+}
+
+.heading {
+  height: auto;
+  width: 100%;
+  padding: 0 30px;
+  margin-top: -40px;
+}
+.heading h2 {
+  font-size: 35px;
+}
+.historyList {
+  height: 490px;
+  width: 100%;
+  padding: 0 30px;
+}
+.list {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #2d2b2b;
+}
+.callName {
+  height: auto;
+  width: 50%;
+  font-size: 11px;
+  font-weight: 500;
+  color: #747272;
+}
+.span {
+  color: #e54651;
+  font-size: 13px;
+}
+.bin {
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+}
+.bin h5 {
+  font-size: 12px;
+  color: #747272;
+  font-weight: 500;
+}
+.binIcon {
+  font-size: 25px;
+  color: #e54651;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+}
+.footer .footer1 {
+  height: 50px;
+  width: 25%;
+  text-align: center;
+}
+.star {
+  color: #7d7d7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+.footer1 h6 {
+  color: #7d7d7d;
+}
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+  }
 }
