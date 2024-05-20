@@ -21,8 +21,8 @@ const Dialer = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="screen">
+      <div className="h-screen w-full flex justify-center items-center m-0 p-0">
+        <div className="h-full w-full bg-black text-white md:h-screen md:w-[350px]">
           <div className={style.header}>
             <div className={style.leftHeader}>
               <h3>8:06</h3>
@@ -35,9 +35,7 @@ const Dialer = () => {
           <div className={style.number}>
             <h2>{result}</h2>
           </div>
-          <div className={`${style.addNumber} text-3xl font-bold underline `}>
-            Add Number
-          </div>
+          <div className={style.addNumber}>Add Number</div>
           <div className={style.keypad}>
             <div className={style.keypadSection1}>
               <div className={style.bubble}>

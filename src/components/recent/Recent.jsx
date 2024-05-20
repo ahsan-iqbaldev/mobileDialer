@@ -17,8 +17,8 @@ const Recent = () => {
   const data = location.state;
 
   return (
-    <div className="container">
-      <div className="screen">
+    <div className="h-screen w-full flex justify-center items-center m-0 p-0">
+      <div className="h-full w-full bg-black text-white md:h-screen md:w-[350px]">
         <div className={style.header}>
           <div className={style.leftHeader}>
             <h3>8:06</h3>
@@ -56,9 +56,7 @@ const Recent = () => {
             </div>
           </div>
         </div>
-        <div className="footer_cover">
-          <BottomBar />
-        </div>
+        <BottomBar />
       </div>
     </div>
   );

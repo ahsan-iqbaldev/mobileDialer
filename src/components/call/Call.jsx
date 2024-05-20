@@ -28,7 +28,7 @@ const Call = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="h-screen w-full flex justify-center items-center m-0 p-0">
         <div className="screen2">
           <div className={style.heading}>calling mobile...</div>
           <div className={style.number}>{data}</div>

@@ -14,22 +14,6 @@ a {
   text-decoration: none;
   color: #fff;
 }
-.container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.screen {
-  height: 100vh;
-  background-color: #000;
-  color: #fff;
-  width: 350px;
-}
 
 .screen2 {
   height: 100vh;
@@ -38,10 +22,7 @@ a {
   width: 350px;
   padding: 25px 0;
 }
-.footer_cover {
-  height: 100px;
-  width: 100%;
-}
+
 @media (max-width: 480px) {
   .screen {
     height: 100%;
