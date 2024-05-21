@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import style from "./Recent.module.css";
 import { FaTelegramPlane, FaWifi, FaStar, FaClock } from "react-icons/fa";
@@ -9,13 +9,21 @@ import { Link } from "react-router-dom";
 import BottomBar from "../bottom-bar";
 
 const Recent = () => {
-  const handleClick = () => {
-    const data = document.getElementById("list");
-    data.style.display = "none";
-  };
   const location = useLocation();
   const data = location.state;
+  console.log(data, "data");
+  const [numbers, setNumbers] = useState([]);
+  // const handleClick = () => {
+  //   const data = document.getElementById("list");
+  //   data.style.display = "none";
+  // };
 
+  useEffect(() => {
+    if (data != null) {
+      setNumbers((prev) => [...prev, data]);
+    }
+  }, [data]);
+  console.log(numbers, "numbers");
   return (
     <div className="h-screen w-full flex justify-center items-center m-0 p-0">
       <div className="h-full w-full bg-black text-white md:h-screen md:w-[350px]">
@@ -39,23 +47,26 @@ const Recent = () => {
           <h2>Recents</h2>
         </div>
         <div className={style.historyList}>
-          <div id="list" className={style.list}>
-            <div className={style.callName}>
-              <span className={style.span}>{data?.key ? data?.key : data}</span>
-              <br />
-              Phone Call Audio
+          {numbers.map((item, index) => (
+            <div id="list" className={style.list} key={index + 100}>
+              <div className={style.callName}>
+                <span className={style.span}>{item?.key}</span>
+                <br />
+                Phone Call Audio
+              </div>
+              <div className={style.bin}>
+                <h5>5:53PM</h5>{" "}
+                <span>
+                  <RiDeleteBin5Line
+                    className={style.binIcon}
+                    // onClick={handleClick}
+                  />
+                </span>
+              </div>
             </div>
-            <div className={style.bin}>
-              <h5>5:53PM</h5>{" "}
-              <span>
-                <RiDeleteBin5Line
-                  className={style.binIcon}
-                  onClick={handleClick}
-                />
-              </span>
-            </div>
-          </div>
+          ))}
         </div>
+
         <BottomBar />
       </div>
     </div>

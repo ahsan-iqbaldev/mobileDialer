@@ -19,7 +19,7 @@ const Call = () => {
     if (data) {
       setNewData(data);
       const timeoutId = setTimeout(() => {
-        navigate("/recent", { state: { key: data } });
+        navigate("/recent", { state: {key:data } });
       }, 10000);
 
       return () => clearTimeout(timeoutId);
@@ -62,7 +62,7 @@ const Call = () => {
               </div>
               <div className={style.buttonDiv}>
                 <div className={style.icon1}>
-                  <Link to="/recent" state={newData}>
+                  <Link to="/recent" state={{...setNewData, key:data }}>
                     <MdCallEnd className={style.Logo} />
                   </Link>
                 </div>

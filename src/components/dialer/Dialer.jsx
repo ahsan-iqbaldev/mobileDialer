@@ -13,7 +13,6 @@ import { IoIosCloseCircle, IoMdContact, IoIosKeypad } from "react-icons/io";
 import BottomBar from "../bottom-bar";
 
 const Dialer = () => {
-  const navigate = useNavigate();
   const [result, setResult] = useState(" ");
 
   const handleClick = (e) => {
@@ -40,8 +39,6 @@ const Dialer = () => {
     } else if (key === "Backspace") {
       playButtonClickSound();
       setResult((prevResult) => prevResult.slice(0, -1));
-    } else if (key === "Enter") {
-      navigate("/call");
     }
   };
 
